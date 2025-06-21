@@ -1,0 +1,160 @@
+.book-card {
+  border: 1px solid #d9d9d9;
+  height: 420px;
+  border-radius: 2px;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card .cover {
+  height: 200px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #999;
+  border-radius: 2px;
+  user-select: none;
+  transition: background-color 0.3s, color 0.3s;
+  overflow: hidden;
+}
+
+.light.book-card {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.85);
+  border-color: #d9d9d9;
+}
+
+.light.book-card .cover {
+  background-color: #f0f0f0;
+  color: #999;
+}
+
+.light.book-card .ant-typography-secondary,
+.light.book-card .ant-typography {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.light.book-card:hover {
+  box-shadow: 0 4px 8px rgba(24, 144, 255, 0.2);
+  border-color: #1890ff;
+}
+
+.dark.book-card {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.85);
+  border-color: #fff;
+}
+
+.dark.book-card .cover {
+  background-color: #1f1f1f;
+  color: #666;
+}
+
+.dark.book-card .ant-typography-secondary,
+.dark.book-card .ant-typography {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dark.book-card:hover {
+  background-color: #222;
+  border-color: #40a9ff;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+}
+
+.book-card .ant-card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 0;
+}
+
+.book-card .ant-card-actions {
+  height: 48px;
+  background-color: transparent !important;
+  padding: 0;
+  margin-top: auto;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-card .ant-card-actions > li {
+  width: 100% !important;
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.book-card .ant-card-actions > li > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+  width: 100%;
+}
+
+.light.book-card .ant-card-actions .anticon-heart {
+  font-size: 24px;
+  color: red;
+  fill: none !important;
+  stroke: red;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: color 0.3s, stroke 0.3s;
+}
+
+.light.book-card .ant-card-actions .anticon-heart:hover {
+  color: #1890ff;
+  stroke: #1890ff;
+}
+
+.light.book-card .ant-card-actions .anticon-heart-filled {
+  font-size: 24px;
+  color: red !important;
+  fill: red !important;
+  stroke: none !important;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.light.book-card .ant-card-actions .anticon-heart-filled:hover {
+  color: #ff7875 !important;
+  fill: #ff7875 !important;
+}
+
+.dark.book-card .ant-card-actions .anticon-heart {
+  font-size: 24px;
+  stroke: #ff4d4f;
+  color: #ff4d4f;
+  fill: none !important;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: color 0.3s, stroke 0.3s;
+}
+
+.dark.book-card .ant-card-actions .anticon-heart:hover {
+  color: #40a9ff;
+  stroke: #40a9ff;
+}
+
+.dark.book-card .ant-card-actions .anticon-heart-filled {
+  font-size: 24px;
+  color: #ff4d4f !important;
+  fill: #ff4d4f !important;
+  stroke: none !important;
+}
+
+.dark.book-card .ant-card-actions .anticon-heart-filled:hover {
+  color: #ff7875 !important;
+  fill: #ff7875 !important;
+}

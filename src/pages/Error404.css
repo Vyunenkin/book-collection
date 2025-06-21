@@ -1,0 +1,54 @@
+.error404-container {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.error404-text {
+  text-align: center;
+  width: 100%;
+}
+
+.error404-title {
+  font-size: 64px !important;
+  margin-bottom: 0 !important;
+  font-weight: 700 !important;
+}
+
+.app-container.light .error404-title,
+.app-container.light .error404-title > *,
+.app-container.light .error404-subtitle,
+.app-container.light .error404-subtitle > * {
+  color: #000000 !important;
+}
+
+.error404-subtitle {
+  font-size: 24px !important;
+  margin-top: 16px !important;
+  line-height: 1.2;
+}
+
+.app-container.dark .error404-title,
+.app-container.dark .error404-title > *,
+.app-container.dark .error404-subtitle,
+.app-container.dark .error404-subtitle > * {
+  color: #ffffff !important;
+}
+
+.error404-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: calc(100vh - 160px);
+  overflow: hidden;
+  width: 100%;
+}
+
+.error404-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}

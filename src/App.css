@@ -1,0 +1,24 @@
+body {
+  overflow-x: hidden;
+}
+
+.app-container {
+  padding: 24px;
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+  min-height: 91.2vh;
+}
+
+.app-container.light {
+  background-color: #ffffff !important;
+  color: #000000;
+}
+
+.app-container.dark {
+  background-color: #121212 !important;
+  color: #ffffff;
+}
+
+.book-grid {
+  margin-top: 16px;
+}
